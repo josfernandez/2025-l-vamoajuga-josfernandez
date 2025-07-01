@@ -46,12 +46,11 @@ monotematica(Persona):-
 :- begin_tests(monotematica).
 
 % Persona que juega solo juegos del mismo género 
-test(monotematica_true) :-
-    monotematica(rocio),
-    monotematica(tito). 
+test(monotematica_Verdadero) :-
+    monotematica(tom).
 
 % Persona que juega juegos de géneros distintos
-test(monotematica_false_distinto_genero) :-
-    \+ monotematica(cande). 
+test(monotematica_Falso) :-
+    \+ monotematica(rocio). 
 
 :- end_tests(monotematica).
